@@ -378,7 +378,7 @@ body:has(.burger.active) {
 }
 
 .hero__title {
-  font-weight: 600;
+  font-weight: 900;
   font-size: 55px;
   line-height: 126%;
   text-transform: uppercase;
@@ -394,7 +394,7 @@ body:has(.burger.active) {
 }
 
 .hero__subtitle {
-  font-weight: 400;
+  font-weight: 600;
   font-size: 20px;
   color: #fff;
   margin-bottom: 35px;
