@@ -98,7 +98,7 @@ body {
 }
 
 .header__logo img {
-  max-width: 246px;
+  max-width: 100px;
 }
 
 .header__nav {
@@ -216,7 +216,7 @@ body {
 
 @media (max-width: 420px) {
   .header__logo img {
-    max-width: 155px;
+    max-width: 75px;
   }
 }
 
@@ -366,7 +366,7 @@ body:has(.burger.active) {
 }
 
 .hero__title span {
-  background: linear-gradient(180deg, #ffb835 0%, #ffbf4a 100%);
+  background: linear-gradient(90deg, #e2c45c 0%, #70360c 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -2757,7 +2757,7 @@ body:has(.burger.active) {
   }
 
   .header__logo img {
-    max-width: 184.5px;
+    max-width: 75px;
   }
 
   .header__social {
