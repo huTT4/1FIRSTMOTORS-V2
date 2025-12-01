@@ -132,6 +132,12 @@ body {
   fill: #ffbb43;
 }
 
+.header__data {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
 .header__time {
   display: flex;
   flex-direction: column;
@@ -142,7 +148,7 @@ body {
 .lang,
 .header__lang-list-link,
 .header__personal a,
-.header__time span {
+.header__data span {
   font-weight: 500;
   font-size: 16px;
   color: #fff;
@@ -222,6 +228,10 @@ body {
 }
 
 @media (max-width: 1100px) {
+  .header__data {
+    flex-direction: column;
+  }
+
   .header__time {
     align-items: center;
   }
@@ -323,7 +333,7 @@ body:has(.burger.active) {
   .lang,
   .header__lang-list-link,
   .header__personal a,
-  .header__time span {
+  .header__data span {
     font-size: 20px;
   }
 
@@ -350,7 +360,7 @@ body:has(.burger.active) {
   .lang,
   .header__lang-list-link,
   .header__personal a,
-  .header__time span {
+  .header__data span {
     font-size: 17px;
   }
 }
@@ -2800,7 +2810,7 @@ body:has(.burger.active) {
   .lang,
   .header__lang-list-link,
   .header__personal a,
-  .header__time span {
+  .header__data span {
     font-size: 12px;
   }
 
