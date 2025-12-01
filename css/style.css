@@ -108,13 +108,13 @@ body {
 .header__nav {
   display: flex;
   align-items: center;
-  gap: 28px;
+  gap: 18px;
   margin-left: auto;
 }
 
 .header__social {
   display: flex;
-  gap: 13px;
+  gap: 6px;
   margin: 0 auto;
 }
 
@@ -122,6 +122,7 @@ body {
   transition: .15s;
   width: 33px;
   height: 33px;
+  text-align: center;
 }
 
 .header__social a:active {
@@ -140,7 +141,7 @@ body {
   display: flex;
   align-items: center;
   gap: 15px;
-  margin-right: 28px;
+  margin-right: 18px;
 }
 
 .header__nav a,
@@ -377,7 +378,7 @@ body:has(.burger.active) {
 }
 
 .hero__title {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 55px;
   line-height: 126%;
   text-transform: uppercase;
@@ -2794,7 +2795,7 @@ body:has(.burger.active) {
   }
 
   .header__nav {
-    gap: 21px;
+    gap: 13.5px;
   }
 
   .header__social a svg {
@@ -2807,6 +2808,10 @@ body:has(.burger.active) {
   .header__personal a,
   .header__address {
     font-size: 12px;
+  }
+
+  .header__address {
+    margin-right: 13.5px;
   }
 
   /* ============================== HERO ============================== */
