@@ -507,6 +507,10 @@ body:has(.burger.active) {
 }
 
 @media (max-width: 650px) {
+  .hero__img {
+    object-position: top center;
+  }
+
   .hero__btns {
     flex-direction: column-reverse;
     gap: 15px;
