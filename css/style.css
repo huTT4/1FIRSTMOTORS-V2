@@ -396,7 +396,7 @@ body:has(.burger.active) {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid #ffbb43;
+  border: 2px solid #be9843;
   border-radius: 10px;
   padding: 15px;
   gap: 12px;
@@ -407,11 +407,11 @@ body:has(.burger.active) {
 }
 
 .hero__btn-1:hover {
-  background-color: #ffbb43;
+  background: linear-gradient(90deg, #e2ca71 0%, #8f4c1d 100%);
 }
 
 .hero__btn-1:active {
-  background-color: #fff;
+  background: linear-gradient(90deg, #ffffff 0%, #ffffff 100%);
   color: #ffbb43;
 }
 
@@ -437,12 +437,12 @@ body:has(.burger.active) {
 }
 
 .hero__btn-2 {
-  border: 2px solid #ffbb43;
+  border: 2px solid #be9843;
   border-radius: 10px;
   padding: 15px;
   max-width: 283px;
   width: 100%;
-  background: #ffbb43;
+  background: linear-gradient(90deg, #e2c45c 0%, #70360c 100%);
   font-weight: 500;
   font-size: 16px;
   text-transform: uppercase;
@@ -452,18 +452,16 @@ body:has(.burger.active) {
 }
 
 .hero__btn-2:hover {
-  background-color: #ffc869;
-  border-color: #ffc869;
+  background: linear-gradient(90deg, #e2ca71 0%, #8f4c1d 100%);
 }
 
 .hero__btn-2:active {
-  background-color: #fff;
+  background: linear-gradient(90deg, #ffffff 0%, #ffffff 100%);
   color: #ffbb43;
-  border-color: #ffbb43;
 }
 
 .hero__btn-2.inactive {
-  background-color: #e4e4e4;
+  background: #e4e4e4;
   color: #888888;
   border-color: #e4e4e4;
   cursor: not-allowed;
@@ -484,6 +482,7 @@ body:has(.burger.active) {
   object-fit: cover;
   object-position: top center;
   display: block;
+  filter: brightness(0.5);
 }
 
 @media (max-width: 650px) {
@@ -596,7 +595,7 @@ body:has(.burger.active) {
 }
 
 .catalog__title span {
-  background: linear-gradient(180deg, #ffb835 0%, #ffbf4a 100%);
+  background: linear-gradient(90deg, #e2c45c 0%, #70360c 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
