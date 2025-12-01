@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="lv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Шрифт -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
+  <link rel="shortcut icon" href="/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-title" content="MZ Cars">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+
+  <!-- Заголовок, описание -->
+  <title>MZ Cars - Mazlietoti auto ar garantiju.</title>
+  <meta name="description" content="MZ Cars - Mazlietoti auto ar garantiju.">
+  <meta name="keywords"
+    content="auto pārdošana,auto pārdošana Rigā,auto no eiropas,lietota auto pārdošana,auto tirdzniecība Rīgā,Auto uzpirkšana,lietotu auto tirdzniecība,Automašīnas pārdošanā">
+
+  <!-- Стили, скрипты -->
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://www.google.com/recaptcha/api.js" defer></script>
+  <script type="module" src="js/filters.js"></script>
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="loading">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+  <!-- Arrow to top -->
+  <button class="arrow__to-top">
+    <img src="img/arrow-to-top.png" alt="arrow-to-top">
+  </button>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="/" class="header__logo">
+          <img src="img/logo.png" alt="logo">
+        </a>
+
+        <div class="header__content">
+          <nav class="header__nav">
+            <a href="#catalog">Auto katalogs</a>
+            <a href="#lizing">Auto līzings</a>
+            <a href="#realization">Realizācija</a>
+            <a href="#about">Par mums</a>
+            <a href="#contacts">Kontakti</a>
+            <div class="langs">
+              <button class="lang">
+                <img src="img/lang.svg" alt="lang">
+                LV
+              </button>
+              <div class="lang__list">
+                <a class="lang__list-link" href="/ru.html">RU</a>
+                <a class="lang__list-link" href="/eng.html">ENG</a>
+              </div>
+            </div>
+          </nav>
+
+          <div class="header__social">
+            <a href="https://www.instagram.com/mz_cars_lv?igsh=MXhiOHRvbTlsMzRhcA==" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256"
+                width="35px" height="35px" fill-rule="nonzero">
+                <g transform="translate(-37.12,-37.12) scale(1.29,1.29)">
+                  <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                    font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                    style="mix-blend-mode: normal">
+                    <g transform="scale(4,4)">
+                      <path
+                        d="M21.58008,7c-8.039,0 -14.58008,6.54494 -14.58008,14.58594v20.83203c0,8.04 6.54494,14.58203 14.58594,14.58203h20.83203c8.04,0 14.58203,-6.54494 14.58203,-14.58594v-20.83398c0,-8.039 -6.54494,-14.58008 -14.58594,-14.58008zM47,15c1.104,0 2,0.896 2,2c0,1.104 -0.896,2 -2,2c-1.104,0 -2,-0.896 -2,-2c0,-1.104 0.896,-2 2,-2zM32,19c7.17,0 13,5.83 13,13c0,7.17 -5.831,13 -13,13c-7.17,0 -13,-5.831 -13,-13c0,-7.169 5.83,-13 13,-13zM32,23c-4.971,0 -9,4.029 -9,9c0,4.971 4.029,9 9,9c4.971,0 9,-4.029 9,-9c0,-4.971 -4.029,-9 -9,-9z" />
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </a>
+            <a href="https://www.tiktok.com/@mz.cars.lv" target="_blank">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M18 0C27.9411 0 36 8.05887 36 18C36 27.9411 27.9411 36 18 36C8.05887 36 0 27.9411 0 18C0 8.05887 8.05887 0 18 0ZM18.7476 7.29114L18.7454 22.0479C18.6843 23.7005 17.3569 25.0267 15.73 25.0268C15.2239 25.0268 14.7476 24.897 14.3286 24.6712C13.3671 24.1527 12.7083 23.1204 12.7083 21.9317C12.7083 20.2245 14.0638 18.8357 15.7291 18.8357C16.04 18.8357 16.3378 18.8885 16.62 18.9786V15.2195C16.3283 15.1794 16.0322 15.1537 15.7291 15.1537C12.0814 15.1537 9.11392 18.1942 9.11392 21.9317C9.11394 24.2244 10.2322 26.254 11.9375 27.4811C13.0115 28.2539 14.319 28.7089 15.7282 28.7089C19.3749 28.7088 22.3424 25.6692 22.3425 21.9317V14.4483C23.7517 15.4853 25.4787 16.0958 27.3418 16.0958L27.3409 12.4146C26.3375 12.4146 25.4021 12.1085 24.6183 11.5847C23.4921 10.8324 22.6796 9.62852 22.4261 8.22567C22.3721 7.92224 22.3416 7.61063 22.3416 7.29114H18.7476Z"
+                  fill="white" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="header__personal">
+            <a href="tel:+37127710202">+37127710202</a>
+            <a href="mailto:mzcars@mzcars.lv">mzcars@mzcars.lv</a>
+          </div>
+        </div>
+
+        <div class="burger">
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero__bg">
+          <video class="hero__img" autoplay muted playsinline>
+            <source src="/img/hero-bg.mp4" type="video/mp4">
+            Jūsu pārlūkprogramma neatbalsta videoklipus.
+          </video>
+          <div class="hero__pagination">
+            <span class="hero__pagination-bullet active"></span>
+            <span class="hero__pagination-bullet"></span>
+            <span class="hero__pagination-bullet"></span>
+            <span class="hero__pagination-bullet"></span>
+            <span class="hero__pagination-bullet"></span>
+          </div>
+        </div>
+
+        <div class="hero__content">
+          <h1 class="hero__title">Kvalitatīvu automašīnu pārdošana no Eiropas Rīgā</h1>
+          <h2 class="hero__subtitle">Auto līzings un Jūsu automašīnas realizācija mūsu stāvvietā</h2>
+          <div class="hero__btns">
+            <a class="hero__btn-1" href="#about">
+              Uzzināt vairāk
+              <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.31192 15.6667L16 1M16 1H0M16 1V17" stroke="white" stroke-width="2" />
+              </svg>
+            </a>
+            <a class="hero__btn-2" href="#catalog">Auto katalogs</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog" id="catalog">
+      <div class="container">
+        <div class="catalog__top">
+          <div class="catalog__title-wrapper">
+            <h3 class="catalog__title">Auto katalogs</h3>
+            <div class="catalog__found">
+              <span class="catalog__found-circle"></span>
+              Atrasti <span data-quantity></span> auto
+            </div>
+          </div>
+          <div class="catalog__search">
+            <input type="text" placeholder="Meklēšana">
+            <button>
+              <img src="img/search.svg" alt="search">
+            </button>
+          </div>
+          <ul class="catalog__filter-cards">
+            <li data-filter="all">Visi</li>
+            <li data-filter="new">Jauni</li>
+            <li data-filter="discount">Ar atlaidi</li>
+            <li data-filter="sold">Pārdots</li>
+          </ul>
+        </div>
+
+        <div class="catalog__inner">
+          <aside class="catalog__left">
+            <div class="catalog__filters">
+              <h4 class="catalog__filters-title">
+                <img src="img/settings.svg" alt="settings">
+                Filtri
+              </h4>
+
+              <div class="catalog__brand">
+                <h5 class="catalog__brand-title">
+                  <img src="img/car.svg" alt="car">
+                  Marka
+                </h5>
+
+                <div class="catalog__select">
+                  <div class="catalog__select-top">
+                    <span class="catalog__brand-choise">Visi</span>
+                    <img src="img/arrow.svg" alt="arrow">
+                  </div>
+                  <ul class="catalog__select-list">
+                    <label>
+                      <input type="radio" name="brand" value="bmw">
+                      <span>BMW</span>
+                    </label>
+
+                    <label>
+                      <input type="radio" name="brand" value="mercedes">
+                      <span>MERCEDES</span>
+                    </label>
+
+                    <label>
+                      <input type="radio" name="brand" value="kia">
+                      <span>KIA</span>
+                    </label>
+
+                    <label>
+                      <input type="radio" name="brand" value="audi">
+                      <span>AUDI</span>
+                    </label>
+
+                    <label>
+                      <input type="radio" name="brand" value="ford">
+                      <span>FORD</span>
+                    </label>
+
+                    <label>
+                      <input type="radio" name="brand" value="volkswagen">
+                      <span>VOLKSWAGEN</span>
+                    </label>
+
+                    <label>
+                      <input type="radio" name="brand" value="volvo">
+                      <span>VOLVO</span>
+                    </label>
+
+                    <label>
+                      <input type="radio" name="brand" value="jaguar">
+                      <span>JAGUAR</span>
+                    </label>
+
+                    <label>
+                      <input type="radio" name="brand" value="jeep">
+                      <span>JEEP</span>
+                    </label>
+
+                    <label>
+                      <input type="radio" name="brand" value="subaru">
+                      <span>SUBARU</span>
+                    </label>
+
+                    <label>
+                      <input type="radio" name="brand" value="saab">
+                      <span>SAAB</span>
+                    </label>
+
+                    <label>
+                      <input type="radio" name="brand" value="renault">
+                      <span>RENAULT</span>
+                    </label>
+
+                    <label>
+                      <input type="radio" name="brand" value="lexus">
+                      <span>LEXUS</span>
+                    </label>
+
+                    <label>
+                      <input type="radio" name="brand" value="landrover">
+                      <span>LAND ROVER</span>
+                    </label>
+
+                    <label>
+                      <input type="radio" name="brand" value="all" checked>
+                      <span>Visi</span>
+                    </label>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="catalog__range">
+                <h5 class="catalog__range-title">
+                  <img src="img/calendar-1.svg" alt="calendar-1">
+                  Gads
+                </h5>
+                <div class="catalog__range-inputs">
+                  <input type="number" id="minInputRange--year" value="2006">
+                  <input type="number" id="maxInputRange--year" value="2023">
+                </div>
+                <div class="catalog__range-slider">
+                  <div class="catalog__range-progress catalog__range-progress--year"></div>
+                </div>
+                <div class="catalog__range-input">
+                  <input type="range" id="rangeMin--year" min="2006" max="2023" value="2006">
+                  <input type="range" id="rangeMax--year" min="2006" max="2023" value="2023">
+                </div>
+              </div>
+
+              <div class="catalog__range">
+                <h5 class="catalog__range-title">
+                  <img src="img/price.svg" alt="price">
+                  Cena
+                </h5>
+                <div class="catalog__range-inputs">
+                  no
+                  <input type="number" id="minInputRange--price" value="3590">
+                  līdz
+                  <input type="number" id="maxInputRange--price" value="64990">
+                </div>
+                <div class="catalog__range-slider">
+                  <div class="catalog__range-progress catalog__range-progress--price"></div>
+                </div>
+                <div class="catalog__range-input">
+                  <input type="range" id="rangeMin--price" min="3590" max="64990" value="3590">
+                  <input type="range" id="rangeMax--price" min="3590" max="64990" value="64990">
+                </div>
+              </div>
+
+              <div class="catalog__select">
+                <div class="catalog__select-top catalog__select-top--other">
+                  Nobraukums
+                  <img src="img/arrow.svg" alt="arrow">
+                </div>
+                <ul class="catalog__select-list">
+                  <label>
+                    <input type="checkbox" name="mileage" value="100000">
+                    <span>līdz 100 000 km</span>
+                  </label>
+
+                  <label>
+                    <input type="checkbox" name="mileage" value="150000">
+                    <span>līdz 150 000 km</span>
+                  </label>
+
+                  <label>
+                    <input type="checkbox" name="mileage" value="200000">
+                    <span>līdz 200 000 km</span>
+                  </label>
+
+                  <label>
+                    <input type="checkbox" name="mileage" value="250000">
+                    <span>līdz 250 000 km</span>
+                  </label>
+
+                  <label>
+                    <input type="checkbox" name="mileage" value="more250k">
+                    <span>250 000 km un vairak</span>
+                  </label>
+                </ul>
+              </div>
+
+              <div class="catalog__select">
+                <div class="catalog__select-top catalog__select-top--other">
+                  Degvielas veids
+                  <img src="img/arrow.svg" alt="arrow">
+                </div>
+                <ul class="catalog__select-list">
+                  <label>
+                    <input type="checkbox" name="fuel" value="Benzīns">
+                    <span>Benzīns</span>
+                  </label>
+
+                  <label>
+                    <input type="checkbox" name="fuel" value="Dīzelis">
+                    <span>Dīzelis</span>
+                  </label>
+
+                  <label>
+                    <input type="checkbox" name="fuel" value="Cits">
+                    <span>Cits</span>
+                  </label>
+                </ul>
+              </div>
+
+              <div class="catalog__select">
+                <div class="catalog__select-top catalog__select-top--other">
+                  Pārnesumkārba
+                  <img src="img/arrow.svg" alt="arrow">
+                </div>
+                <ul class="catalog__select-list">
+                  <label>
+                    <input type="checkbox" name="transmission" value="Automātiskā">
+                    <span>Automātiskā</span>
+                  </label>
+
+                  <label>
+                    <input type="checkbox" name="transmission" value="Mehāniska">
+                    <span>Mehāniska</span>
+                  </label>
+                </ul>
+              </div>
+
+              <div class="catalog__select">
+                <div class="catalog__select-top catalog__select-top--other">
+                   Pieejamība
+                  <img src="img/arrow.svg" alt="arrow">
+                </div>
+                <ul class="catalog__select-list">
+                  <label>
+                    <input type="checkbox" name="availability" value="Uz vietas">
+                    <span>Uz vietas</span>
+                  </label>
+
+                  <label>
+                    <input type="checkbox" name="availability" value="Drīzumā">
+                    <span>Drīzumā</span>
+                  </label>
+
+                  <label>
+                    <input type="checkbox" name="availability" value="Pec pasūtīšanas">
+                    <span>Pec pasūtīšanas</span>
+                  </label>
+                </ul>
+              </div>
+            </div>
+
+            <button class="catalog__filters-btn" id="clear-filters">Notīrīt filtrus</button>
+
+            <a href="https://bpauto.lv/lv/" target="_blank" rel="noopener">
+              <img class="banner-img" src="img/banners/banner-bpauto-lv.webp"
+                alt="Auto pārbaude pirms pirkšanas — Bp Auto">
+            </a>
+          </aside>
+
+          <div class="catalog__right">
+            <div class="catalog__cards"></div>
+
+            <button class="catalog__show">Rādīt vēl</button>
+
+            <a href="https://bpauto.lv/lv/" target="_blank" rel="noopener">
+              <img class="banner-img-mobile" src="img/banners/banner-bpauto-lv.webp"
+                alt="Auto pārbaude pirms pirkšanas — Bp Auto">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="form" id="lizing">
+      <div class="form__wrapper">
+        <div class="container">
+          <div class="form__inner">
+            <img src="img/form-bg.jpg" alt="form-img">
+            <h3>Atstājiet savu pieteikumu auto līzingam</h3>
+            <h4>Mēs to izskatīsim un tuvākajā laikā sazināsimies ar jums</h4>
+            <form class="contact-form">
+              <div class="form__inputs">
+                <input type="text" placeholder="Jūsu vārds" name="name" required>
+                <input type="tel" placeholder="Tālruņa numurs" name="phone" required>
+                <input type="email" placeholder="E-pasts" name="email" required>
+                <input type="text" placeholder="Auto art. numurs" name="carId" required>
+              </div>
+
+              <label class="form__checkbox">
+                <input type="checkbox" required>
+                <span class="form__checkbox-checkmark">
+                  <img src="img/form-checkmark.svg" alt="form-checkmark">
+                </span>
+                Es piekrītu <a href="#" target="_blank">drošības politikai</a> un <a href="#" target="_blank">lietošanas
+                  noteikumiem</a>
+              </label>
+
+              <div id="capcha1" class="g-recaptcha" data-sitekey="6LemRborAAAAAIgM93Jqy9gzfoAeQopJXRwQ8_9_"></div>
+              <div class="form-notification"></div>
+
+              <button type="submit" class="form__btn">Sūtīt</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="realization" id="realization">
+      <div class="realization__wrapper">
+        <div class="container">
+          <img class="realization__img" src="img/realization-img.jpg" alt="realization-img">
+          <h3 class="realization__title">Realizācija</h3>
+          <h4 class="realization__subtitle">Vai vēlaties pārdot savu auto mūsu stāvvietā?</h4>
+          <h5 class="realization__subtitle-2">Tad mūsu pakalpojums — realizācija — jums ir ideāli piemērots.</h5>
+          <h5 class="realization__list-title">Mēs veicam visu darbu jūsu vietā:</h5>
+          <ul class="realization__list">
+            <li>
+              <img src="img/photo.svg" alt="photo">
+              Automašīnas fotogrāfijas
+            </li>
+            <li>
+              <img src="img/posting.svg" alt="posting">
+              Sludinājuma publicēšana
+            </li>
+            <li>
+              <img src="img/best-price.svg" alt="best-price">
+              Labākās realizācijas cenas noteikšana
+            </li>
+            <li>
+              <img src="img/show-car.svg" alt="show-car">
+              Saziņa ar klientiem un auto apskate
+            </li>
+          </ul>
+          <h5 class="realization__descr">Iesniedziet savu pieteikumu un saņemiet mūsu labāko piedāvājumu</h5>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about__inner">
+          <div class="about__text">
+            <h3>Par mums</h3>
+
+            <p>
+              <span>MZ Cars – kvalitatīvu automašīnu pārdošana no Eiropas.</span> Mūsu pieredze un kompetence ļauj mums
+              izvēlēties cienīgus transportlīdzekļus visā Eiropā un piegādāt tos uz Latviju tālākai realizācijai.
+            </p>
+
+            <p>
+              <span>
+                Mūsu autoparkā vienmēr varēsiet atrast interesantas automašīnas gandrīz jebkurai gaumei. Ja konkrētā
+                brīdī kāds modelis nav pieejams, mēs to varam piegādāt pēc pasūtījuma.
+              </span> Automašīnu pie mums var iegādāties gan par pilnu summu, gan saņemt finansējumu no mūsu
+              pastāvīgajiem sadarbības partneriem.
+            </p>
+
+            <p>
+              <span>
+                Jūsu pašreizējais auto var kalpot kā daļa no samaksas par jauno,
+              </span>
+              taču tikai pēc mūsu fiziskās apskates. Pēc automašīnas iegādes pie mums, to varēsiet apkalpot sadarbībā ar
+              mūsu pastāvīgajiem partneriem. Tāpat pieņemam automašīnas realizācijai mūsu stāvvietā.
+            </p>
+
+            <p><span class="italic">Mēs esam par ilgtermiņa sadarbību, caurspīdīgu un uzticamu pieeju.</span></p>
+
+            <p>Jautājumu gadījumā, lūdzu, sazinieties ar mums – ar prieku palīdzēsim.</p>
+
+            <p>Ar cieņu,<br><span>MZ Cars</span></p>
+          </div>
+          <img class="about__img" src="img/about-img.jpg" alt="about-img">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contacts">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__content">
+          <a href="/">
+            <img class="footer__logo" src="img/logo.png" alt="logo">
+          </a>
+
+          <div class="footer__info">
+            <nav class="footer__nav">
+              <a href="#catalog">Auto katalogs</a>
+              <a href="#about">Par mums</a>
+              <a href="#lizing">Auto līzings</a>
+              <a href="#contacts">Kontakti</a>
+              <a href="#realization">Realizācija</a>
+              <div class="langs">
+                <button class="lang lang--white">
+                  <img src="img/lang-white.svg" alt="lang-white">
+                  LV
+                </button>
+                <div class="lang__list">
+                  <a class="lang__list-link" href="/ru.html">RU</a>
+                  <a class="lang__list-link" href="/eng.html">ENG</a>
+                </div>
+              </div>
+            </nav>
+
+            <div class="footer__data">
+              <h4>SIA MZ MOTORS</h4>
+              <p><span>REG.NR.:</span> 40203053835<br>VAT.NR.: <span>LV40203053835</span> </p>
+            </div>
+
+            <ul class="footer__social">
+              <li>
+                <img src="img/tel.svg" alt="tel">
+                <h5>Tel.</h5>
+                <a href="tel:+37127710202">+(371) 27 710 202</a>
+              </li>
+              <li>
+                <img src="img/email.svg" alt="email">
+                <h5>Email:</h5>
+                <a href="mailto:mzcars@mzcars.lv">mzcars@mzcars.lv</a>
+              </li>
+              <li>
+                <img src="img/web.svg" alt="web">
+                <h5>WEB:</h5>
+                <a href="http://www.mzcars.lv/">www.mzcars.lv</a>
+              </li>
+            </ul>
+
+            <a href="https://maps.app.goo.gl/S6kYodoL2Cgj2AKy9" target="_blank" class="footer__address">
+              <img src="img/mark.svg" alt="mark">
+              Beberbeķu Iela 58 (LV-1029)<br>Riga, Latvia
+          </div>
+        </div>
+        </a>
+      </div>
+    </div>
+    </div>
+    <iframe class="footer__map"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1087.9701700543956!2d23.961442076843966!3d56.949823409822336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eedade2e211ccf%3A0x4f5ae9090d82d812!2zQmViZXJiZcS3dSBJZWxhIDU4LCBaZW1nYWxlcyBwcmlla8WhcGlsc8STdGEsIFLEq2dhLCBMVi0xMDI5LCDQm9Cw0YLQstC40Y8!5e0!3m2!1sru!2sru!4v1756731879958!5m2!1sru!2sru"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </footer>
+</body>
+
+</html>

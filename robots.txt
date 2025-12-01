@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Disallow: /product/index.html$
+Disallow: /product/lv.html$
+Disallow: /product/eng.html$
+
+Sitemap: https://www.mzcars.lv/sitemap.xml

@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Шрифт -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
+  <link rel="shortcut icon" href="/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-title" content="MZ Cars">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+
+  <!-- Заголовок, описание -->
+  <title>MZ Cars - продажа б/у автомобилей с гарантией в Риге.</title>
+  <meta name="description" content="MZ Cars - продажа б/у автомобилей с гарантией в Риге.">
+  <meta name="keywords"
+    content="продажа авто,купля продажа авто,продажа авто в латвии,продажа авто в Риге,продажа авто из Германии,продажа б/у авто,продажа б/у авто в Риге,продажа б/у Латвия,продажа авто в латвии б/у,купить б/у авто в риге,купить авто">
+
+  <!-- Стили, скрипты -->
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://www.google.com/recaptcha/api.js" defer></script>
+  <script type="module" src="js/filters.js"></script>
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="loading">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+  <!-- Arrow to top -->
+  <button class="arrow__to-top">
+    <img src="img/arrow-to-top.png" alt="arrow-to-top">
+  </button>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="/ru.html" class="header__logo">
+          <img src="img/logo.png" alt="logo">
+        </a>
+
+        <div class="header__content">
+          <nav class="header__nav">
+            <a href="#catalog">Каталог Авто</a>
+            <a href="#lizing">Кредит/лизинг </a>
+            <a href="#realization">Продать авто </a>
+            <a href="#about">Комиссионная продажа</a>
+            <a href="#contacts">Контакты</a>
+            <div class="langs">
+              <button class="lang">
+                <img src="img/lang.svg" alt="lang">
+                RU
+              </button>
+              <div class="lang__list">
+                <a class="lang__list-link" href="/">LV</a>
+                <a class="lang__list-link" href="/eng.html">ENG</a>
+              </div>
+            </div>
+          </nav>
+
+          <div class="header__social">
+            <a href="https://www.instagram.com/mz_cars_lv?igsh=MXhiOHRvbTlsMzRhcA==" target="_blank">
+              <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_15_76)">
+                  <path
+                    d="M2.75552 30.25L4.61452 23.419C3.38958 21.3192 2.74603 18.931 2.75002 16.5C2.75002 8.90588 8.90589 2.75 16.5 2.75C24.0941 2.75 30.25 8.90588 30.25 16.5C30.25 24.0941 24.0941 30.25 16.5 30.25C14.0701 30.2539 11.6829 29.6109 9.58377 28.3869L2.75552 30.25ZM11.5376 10.0485C11.3601 10.0595 11.1866 10.1063 11.0275 10.186C10.8784 10.2705 10.7422 10.3761 10.6233 10.4995C10.4583 10.6549 10.3648 10.7896 10.2644 10.9202C9.75621 11.5816 9.48286 12.3934 9.48752 13.2275C9.49027 13.9012 9.66627 14.5571 9.94127 15.1704C10.5036 16.4106 11.429 17.7237 12.6514 18.9406C12.9456 19.2335 13.233 19.5278 13.5424 19.8014C15.0596 21.1371 16.8675 22.1004 18.8224 22.6146L19.6048 22.7343C19.8591 22.748 20.1135 22.7288 20.3693 22.7164C20.7697 22.6957 21.1607 22.5873 21.5146 22.3988C21.7429 22.2778 21.8501 22.2172 22.0413 22.0962C22.0413 22.0962 22.1004 22.0577 22.2131 21.9725C22.3988 21.835 22.5129 21.7374 22.6669 21.5765C22.781 21.4583 22.88 21.3194 22.9556 21.1613C23.0629 20.9371 23.1701 20.5095 23.2141 20.1534C23.2471 19.8811 23.2375 19.7326 23.2334 19.6405C23.2279 19.4934 23.1055 19.3407 22.9721 19.2761L22.1719 18.9172C22.1719 18.9172 20.9756 18.3961 20.2455 18.0634C20.1685 18.0298 20.086 18.0107 20.0021 18.007C19.9081 17.9973 19.813 18.0079 19.7234 18.038C19.6337 18.0682 19.5516 18.1171 19.4824 18.1816V18.1789C19.4755 18.1789 19.3834 18.2573 18.3893 19.4618C18.3322 19.5384 18.2536 19.5964 18.1635 19.6282C18.0734 19.66 17.9758 19.6643 17.8833 19.6405C17.7937 19.6165 17.7059 19.5862 17.6206 19.5498C17.4501 19.4783 17.391 19.4508 17.2741 19.3999L17.2673 19.3971C16.4806 19.0537 15.7523 18.5898 15.1085 18.0221C14.9353 17.8709 14.7744 17.7059 14.6094 17.5464C14.0684 17.0283 13.597 16.4423 13.2069 15.8029L13.1258 15.6722C13.0675 15.5845 13.0204 15.4898 12.9855 15.3904C12.9333 15.1882 13.0694 15.026 13.0694 15.026C13.0694 15.026 13.4035 14.6602 13.5589 14.4622C13.6883 14.2977 13.809 14.1265 13.9205 13.9494C14.0828 13.6881 14.1336 13.42 14.0484 13.2124C13.6634 12.2719 13.2646 11.3355 12.8549 10.406C12.7738 10.2217 12.5331 10.0897 12.3145 10.0636C12.2403 10.0554 12.166 10.0471 12.0918 10.0416C11.9071 10.0325 11.7221 10.0343 11.5376 10.0471V10.0485Z"
+                    fill="white" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_15_76">
+                    <rect width="33" height="33" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+
+            </a>
+            <a href="https://www.instagram.com/mz_cars_lv?igsh=MXhiOHRvbTlsMzRhcA==" target="_blank">
+              <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_15_57)">
+                  <path
+                    d="M16.9342 3.25774C9.02029 3.25774 2.60522 9.67281 2.60522 17.5867C2.60522 24.7383 7.84532 30.6662 14.696 31.7423V21.7278H11.0564V17.5867H14.696V14.43C14.696 10.8392 16.8339 8.85606 20.108 8.85606C21.6756 8.85606 23.3148 9.13548 23.3148 9.13548V12.6604H21.5094C19.7283 12.6604 19.1738 13.7652 19.1738 14.8986V17.5867H23.1472L22.5124 21.7278H19.1738V31.7423C26.023 30.6676 31.2631 24.7368 31.2631 17.5867C31.2631 9.67281 24.848 3.25774 16.9342 3.25774Z"
+                    fill="white" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_15_57">
+                    <rect width="33" height="33" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+            <a href="https://www.tiktok.com/@mz.cars.lv" target="_blank">
+              <svg width="30.5" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M18 0C27.9411 0 36 8.05887 36 18C36 27.9411 27.9411 36 18 36C8.05887 36 0 27.9411 0 18C0 8.05887 8.05887 0 18 0ZM18.7476 7.29114L18.7454 22.0479C18.6843 23.7005 17.3569 25.0267 15.73 25.0268C15.2239 25.0268 14.7476 24.897 14.3286 24.6712C13.3671 24.1527 12.7083 23.1204 12.7083 21.9317C12.7083 20.2245 14.0638 18.8357 15.7291 18.8357C16.04 18.8357 16.3378 18.8885 16.62 18.9786V15.2195C16.3283 15.1794 16.0322 15.1537 15.7291 15.1537C12.0814 15.1537 9.11392 18.1942 9.11392 21.9317C9.11394 24.2244 10.2322 26.254 11.9375 27.4811C13.0115 28.2539 14.319 28.7089 15.7282 28.7089C19.3749 28.7088 22.3424 25.6692 22.3425 21.9317V14.4483C23.7517 15.4853 25.4787 16.0958 27.3418 16.0958L27.3409 12.4146C26.3375 12.4146 25.4021 12.1085 24.6183 11.5847C23.4921 10.8324 22.6796 9.62852 22.4261 8.22567C22.3721 7.92224 22.3416 7.61063 22.3416 7.29114H18.7476Z"
+                  fill="white" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="header__personal">
+            <a href="tel:+37126995599">+371 26995599</a>
+            <a href="mailto:info@firstmotors.lv">info@firstmotors.lv</a>
+          </div>
+        </div>
+
+        <div class="burger">
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero__bg">
+          <img class="hero__img" src="img/hero-bg.jpg" alt="">
+        </div>
+
+        <div class="hero__content">
+          <h1 class="hero__title">Будь первым, выбирай <span>First Motors.</span></h1>
+          <h2 class="hero__subtitle">Покупка, продажда подержанных автомобилей. Авто лизинг.</h2>
+          <div class="hero__btns">
+            <a class="hero__btn-1" href="#about">
+              О нас
+              <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_4_335)">
+                  <path
+                    d="M7.91667 2.375V3.95833H3.95833V15.0417H15.0417V11.0833H16.625V15.8333C16.625 16.0433 16.5416 16.2447 16.3931 16.3931C16.2447 16.5416 16.0433 16.625 15.8333 16.625H3.16667C2.9567 16.625 2.75534 16.5416 2.60687 16.3931C2.45841 16.2447 2.375 16.0433 2.375 15.8333V3.16667C2.375 2.9567 2.45841 2.75534 2.60687 2.60687C2.75534 2.45841 2.9567 2.375 3.16667 2.375H7.91667ZM14.018 6.10137L9.5 10.6194L8.38058 9.5L12.8986 4.98196L10.2917 2.375H16.625V8.70833L14.018 6.10137Z"
+                    fill="white" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_4_335">
+                    <rect width="19" height="19" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+            <a class="hero__btn-2" href="#catalog">АВТО КАТАЛОГ</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog" id="catalog">
+      <div class="container">
+        <div class="catalog__top">
+          <div class="catalog__title-wrapper">
+            <h3 class="catalog__title"><span>Авто</span> каталог</h3>
+            <div class="catalog__found">
+              Найдено <span data-quantity></span> авто
+            </div>
+          </div>
+          <div class="catalog__search">
+            <input type="text" placeholder="Поиск">
+            <button>
+              <img src="img/search.svg" alt="search">
+            </button>
+          </div>
+        </div>
+
+        <div class="catalog__inner">
+          <aside class="catalog__left">
+            <div class="catalog__filters">
+              <div class="catalog__item">
+                <h5 class="catalog__item-title">
+                  <img src="img/car.png" alt="car">
+                  Марка
+                </h5>
+
+                <div class="catalog__select">
+                  <div class="catalog__select-top">
+                    <span>Все</span>
+                    <img src="img/arrow.svg" alt="arrow">
+                  </div>
+                  <ul class="catalog__select-list">
+                    <label>
+                      <input type="radio" name="brand" value="bmw">
+                      <span>BMW</span>
+                    </label>
+
+                    <label>
+                      <input type="radio" name="brand" value="mercedes">
+                      <span>MERCEDES</span>
+                    </label>
+
+                    <label>
+                      <input type="radio" name="brand" value="kia">
+                      <span>KIA</span>
+                    </label>
+
+                    <label>
+                      <input type="radio" name="brand" value="audi">
+                      <span>AUDI</span>
+                    </label>
+
+                    <label>
+                      <input type="radio" name="brand" value="ford">
+                      <span>FORD</span>
+                    </label>
+
+                    <label>
+                      <input type="radio" name="brand" value="volkswagen">
+                      <span>VOLKSWAGEN</span>
+                    </label>
+
+                    <label>
+                      <input type="radio" name="brand" value="volvo">
+                      <span>VOLVO</span>
+                    </label>
+
+                    <label>
+                      <input type="radio" name="brand" value="jaguar">
+                      <span>JAGUAR</span>
+                    </label>
+
+                    <label>
+                      <input type="radio" name="brand" value="jeep">
+                      <span>JEEP</span>
+                    </label>
+
+                    <label>
+                      <input type="radio" name="brand" value="subaru">
+                      <span>SUBARU</span>
+                    </label>
+
+                    <label>
+                      <input type="radio" name="brand" value="saab">
+                      <span>SAAB</span>
+                    </label>
+
+                    <label>
+                      <input type="radio" name="brand" value="renault">
+                      <span>RENAULT</span>
+                    </label>
+
+                    <label>
+                      <input type="radio" name="brand" value="lexus">
+                      <span>LEXUS</span>
+                    </label>
+
+                    <label>
+                      <input type="radio" name="brand" value="landrover">
+                      <span>LAND ROVER</span>
+                    </label>
+
+                    <label>
+                      <input type="radio" name="brand" value="all" checked>
+                      <span>Все</span>
+                    </label>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="catalog__item">
+                <h5 class="catalog__item-title">
+                  <img src="img/calendar-1.png" alt="calendar-1">
+                  Год выпуска
+                </h5>
+
+                <div class="catalog__range">
+                  <input type="number" min="1920" max="2025" value="1920">
+                  до
+                  <input type="number" min="1920" max="2025" value="2025">
+                </div>
+              </div>
+
+              <div class="catalog__item">
+                <h5 class="catalog__item-title">
+                  <img src="img/speedometer-1.png" alt="speedometer-1">
+                  Пробег
+                </h5>
+
+                <div class="catalog__range">
+                  <input type="number" min="1920" max="2025" value="1920">
+                  до
+                  <input type="number" min="1920" max="2025" value="2025">
+                </div>
+              </div>
+
+              <div class="catalog__item">
+                <h5 class="catalog__item-title">
+                  <img src="img/speedometer-1.png" alt="speedometer-1">
+                  Вид топлива
+                </h5>
+
+                <ul class="catalog__choice">
+                  <label>
+                    <input type="checkbox" name="fuel" value="benzin">
+                    <span>Бензин</span>
+                  </label>
+
+                  <label>
+                    <input type="checkbox" name="fuel" value="dizel">
+                    <span>Дизель</span>
+                  </label>
+
+                  <label>
+                    <input type="checkbox" name="fuel" value="hybrid">
+                    <span>Гибрид</span>
+                  </label>
+
+                  <label>
+                    <input type="checkbox" name="fuel" value="electro">
+                    <span>Электро</span>
+                  </label>
+                </ul>
+              </div>
+
+              <div class="catalog__item">
+                <h5 class="catalog__item-title">
+                  <img src="img/car.png" alt="car">
+                  Модель
+                </h5>
+
+                <div class="catalog__select">
+                  <div class="catalog__select-top">
+                    <span>Все</span>
+                    <img src="img/arrow.svg" alt="arrow">
+                  </div>
+                  <ul class="catalog__select-list">
+                    <label>
+                      <input type="radio" name="model" value="bmw e46">
+                      <span>BMW e46</span>
+                    </label>
+
+                    <label>
+                      <input type="radio" name="model" value="all" checked>
+                      <span>Все</span>
+                    </label>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="catalog__item">
+                <h5 class="catalog__item-title">
+                  <img src="img/price.png" alt="price">
+                  Цена
+                  <span>Евро</span>
+                </h5>
+
+                <div class="catalog__range">
+                  <input type="number" min="3000000" max="8000000" value="3000000">
+                  до
+                  <input type="number" min="3000000" max="8000000" value="8000000">
+                </div>
+              </div>
+
+              <div class="catalog__item">
+                <h5 class="catalog__item-title">
+                  <img src="img/transmission-1.png" alt="transmission-1">
+                  КПП
+                </h5>
+
+                <ul class="catalog__choice">
+                  <label>
+                    <input type="checkbox" name="transmission" value="mechanical">
+                    <span>Механика</span>
+                  </label>
+
+                  <label>
+                    <input type="checkbox" name="transmission" value="automatic">
+                    <span>Автомат</span>
+                  </label>
+                </ul>
+              </div>
+
+              <div class="catalog__item">
+                <h5 class="catalog__item-title">
+                  <img src="img/speedometer-1.png" alt="speedometer-1">
+                  Доступность
+                </h5>
+
+                <ul class="catalog__choice">
+                  <label>
+                    <input type="checkbox" name="availability" value="stock">
+                    <span>В наличии</span>
+                  </label>
+
+                  <label>
+                    <input type="checkbox" name="availability" value="soon">
+                    <span>Скоро будет</span>
+                  </label>
+
+                  <label>
+                    <input type="checkbox" name="availability" value="order">
+                    <span>По заказу</span>
+                  </label>
+                </ul>
+              </div>
+            </div>
+
+            <div class="catalog__filters-btns">
+              <button class="catalog__filters-btn" id="show-filters">Показать 34 автомобиля</button>
+              <button class="catalog__filters-btn catalog__filters-btn--clear" id="clear-filters">Сбросить
+                фильтры</button>
+            </div>
+          </aside>
+
+          <div class="catalog__right">
+            <div class="catalog__cards"></div>
+
+            <button class="catalog__show">показать еще</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="form" id="lizing">
+      <div class="form__wrapper">
+        <div class="container">
+          <div class="form__inner">
+            <img src="img/form-bg.jpg" alt="form-img">
+            <h3>Оставьте свою заявку на авто лизинг</h3>
+            <h4>Мы ее рассмотрим и свяжемся в вами в ближайшее время</h4>
+            <form class="contact-form">
+              <div class="form__inputs">
+                <input type="text" placeholder="Ваше имя" name="name" required>
+                <input type="tel" placeholder="Номер телефона" name="phone" required>
+                <input type="email" placeholder="Email" name="email" required>
+                <input type="text" placeholder="Арт. автомобиля" name="carId" required>
+              </div>
+
+              <label class="form__checkbox">
+                <input type="checkbox" required>
+                <span class="form__checkbox-checkmark">
+                  <img src="img/form-checkmark.svg" alt="form-checkmark">
+                </span>
+                Я согласен с <a href="#" target="_blank">политикой безопасности</a> и <a href="#"
+                  target="_blank">правилами
+                  пользования</a>
+              </label>
+
+              <div class="g-recaptcha" data-sitekey="6LemRborAAAAAIgM93Jqy9gzfoAeQopJXRwQ8_9_"></div>
+              <div class="form-notification"></div>
+
+              <button type="submit" class="form__btn">отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="realization" id="realization">
+      <div class="realization__wrapper">
+        <div class="container">
+          <img class="realization__img" src="img/realization-img.jpg" alt="realization-img">
+          <h3 class="realization__title">реализация</h3>
+          <h4 class="realization__subtitle">Хотите продать ваш авто у нас на стоянке ?</h4>
+          <h5 class="realization__subtitle-2">Тогда наша услуга - реализация вам идеально подходит. </h5>
+          <h5 class="realization__list-title">Мы осуществляем всю работу за вас: </h5>
+          <ul class="realization__list">
+            <li>
+              <img src="img/photo.svg" alt="photo">
+              Фотографии автомобиля
+            </li>
+            <li>
+              <img src="img/posting.svg" alt="posting">
+              Постинг объявления
+            </li>
+            <li>
+              <img src="img/best-price.svg" alt="best-price">
+              Определение лучшей цены для реализации
+            </li>
+            <li>
+              <img src="img/show-car.svg" alt="show-car">
+              Связь с клиентами и показ автомобиля
+            </li>
+          </ul>
+          <h5 class="realization__descr">Подайте свою заявку и получите наше лучшее предложение. </h5>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about__inner">
+          <div class="about__text">
+            <h3>О нас</h3>
+
+            <p>
+              <span>MZ Cars - продажа качественных автомобилей из Европы.</span> Наш опыт и компетенция, позволяет нам
+              выбирать достойные
+              автомобили со всей Европы и привозить их в Латвию для дальнейшей реализации.
+            </p>
+
+            <p>
+              <span>
+                В нашем автопарке, вы всегда сможете найти интересные автомобили на практически на любой вкус, того что
+                нет в
+                наличии, мы всегда можем привезти под заказ.
+              </span> Купить автомобиль у нас можно как за полную сумму, так и получить
+              финансирование от наших постоянных партнеров.
+            </p>
+
+            <p>
+              <span>
+                Ваш текущий автомобиль, может быть так же как часть оплаты за
+                новый,
+              </span>
+              но только после нашего физического осмотра. После покупки у нас автомобиля
+              вы можете его обслуживать у нас с нашими постоянными партнерами.
+              Также принимаем автомобиля на реализацию у нас на стоянке.
+            </p>
+
+            <p><span class="italic">Мы за долгосрочное сотрудничество, за прозрачный и доверительный подход.</span></p>
+
+            <p>По всем вопросам, пожалуйста, обращайтесь, будем рады помочь. </p>
+
+            <p>С ув.<br><span>MZ Cars</span></p>
+          </div>
+          <img class="about__img" src="img/about-img.jpg" alt="about-img">
+        </div>
+      </div>
+    </section> -->
+  </main>
+
+  <!-- <footer class="footer" id="contacts">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__content">
+          <a href="/ru.html">
+            <img class="footer__logo" src="img/logo.png" alt="logo">
+          </a>
+
+          <div class="footer__info">
+            <nav class="footer__nav">
+              <a href="#catalog">Авто каталог</a>
+              <a href="#about">О нас</a>
+              <a href="#lizing">Авто лизинг</a>
+              <a href="#contacts">Контакты</a>
+              <a href="#realization">Реализация</a>
+              <div class="langs">
+                <button class="lang lang--white">
+                  <img src="img/lang-white.svg" alt="lang-white">
+                  RU
+                </button>
+                <div class="lang__list">
+                  <a class="lang__list-link" href="/">LV</a>
+                  <a class="lang__list-link" href="/eng.html">ENG</a>
+                </div>
+              </div>
+            </nav>
+
+            <div class="footer__data">
+              <h4>SIA MZ MOTORS</h4>
+              <p><span>REG.NR.:</span> 40203053835<br>VAT.NR.: <span>LV40203053835</span> </p>
+            </div>
+
+            <ul class="footer__social">
+              <li>
+                <img src="img/tel.svg" alt="tel">
+                <h5>Tel.</h5>
+                <a href="tel:+37127710202">+(371) 27 710 202</a>
+              </li>
+              <li>
+                <img src="img/email.svg" alt="email">
+                <h5>Email:</h5>
+                <a href="mailto:mzcars@mzcars.lv">mzcars@mzcars.lv</a>
+              </li>
+              <li>
+                <img src="img/web.svg" alt="web">
+                <h5>WEB:</h5>
+                <a href="http://www.mzcars.lv/">www.mzcars.lv</a>
+              </li>
+            </ul>
+
+            <a href="https://maps.app.goo.gl/S6kYodoL2Cgj2AKy9" target="_blank" class="footer__address">
+              <img src="img/mark.svg" alt="mark">
+              Beberbeķu Iela 58 (LV-1029)<br>Riga, Latvia
+            </a>
+          </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <iframe class="footer__map"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1087.9701700543956!2d23.961442076843966!3d56.949823409822336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eedade2e211ccf%3A0x4f5ae9090d82d812!2zQmViZXJiZcS3dSBJZWxhIDU4LCBaZW1nYWxlcyBwcmlla8WhcGlsc8STdGEsIFLEq2dhLCBMVi0xMDI5LCDQm9Cw0YLQstC40Y8!5e0!3m2!1sru!2sru!4v1756731879958!5m2!1sru!2sru"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </footer> -->
+</body>
+
+</html>

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Шрифт -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
+  <link rel="shortcut icon" href="/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-title" content="MZ Cars">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+
+  <!-- Заголовок, описание -->
+  <title>MZ Cars - used cars selling with warranty.</title>
+  <meta name="description" content="MZ Cars - used cars selling with warranty.">
+  <meta name="keywords"
+    content="buy car in Riga, buy car Latvia, sell car Latvia, sell car Riga,online car selling,used car selling,best car selling,used car sell">
+
+  <!-- Jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Slick Slider -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
+  <!-- Fancybox -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.css">
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.umd.js" defer></script>
+  <!-- Стили, скрипты -->
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="https://www.google.com/recaptcha/api.js" defer></script>
+  <script src="../js/main.js" defer></script>
+  <script type="module" src="../js/product.js"></script>
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="loading">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+  <!-- Arrow to top -->
+  <button class="arrow__to-top">
+    <img src="../img/arrow-to-top.png" alt="arrow-to-top">
+  </button>
+
+  <header class="header bg">
+    <div class="container">
+      <div class="header__inner">
+        <a href="/eng.html" class="header__logo">
+          <img src="../img/logo.png" alt="logo">
+        </a>
+
+        <div class="header__content">
+          <nav class="header__nav">
+            <a href="/eng.html#catalog">Car Catalog</a>
+            <a href="/eng.html#lizing">Car Leasing</a>
+            <a href="/eng.html#realization">Consignment Sale</a>
+            <a href="/eng.html#about">About Us</a>
+            <a href="/eng.html#contacts">​​​​​​​Contacts</a>
+            <div class="langs">
+              <button class="lang">
+                <img src="../img/lang.svg" alt="lang">
+                ENG
+              </button>
+              <div class="lang__list">
+                <a class="lang__list-link" data-lang="ru" href="#">RU</a>
+                <a class="lang__list-link" data-lang="lv" href="#">LV</a>
+              </div>
+            </div>
+          </nav>
+
+          <div class="header__social">
+            <a href="https://www.instagram.com/mz_cars_lv?igsh=MXhiOHRvbTlsMzRhcA==" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256"
+                width="35px" height="35px" fill-rule="nonzero">
+                <g transform="translate(-37.12,-37.12) scale(1.29,1.29)">
+                  <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                    font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                    style="mix-blend-mode: normal">
+                    <g transform="scale(4,4)">
+                      <path
+                        d="M21.58008,7c-8.039,0 -14.58008,6.54494 -14.58008,14.58594v20.83203c0,8.04 6.54494,14.58203 14.58594,14.58203h20.83203c8.04,0 14.58203,-6.54494 14.58203,-14.58594v-20.83398c0,-8.039 -6.54494,-14.58008 -14.58594,-14.58008zM47,15c1.104,0 2,0.896 2,2c0,1.104 -0.896,2 -2,2c-1.104,0 -2,-0.896 -2,-2c0,-1.104 0.896,-2 2,-2zM32,19c7.17,0 13,5.83 13,13c0,7.17 -5.831,13 -13,13c-7.17,0 -13,-5.831 -13,-13c0,-7.169 5.83,-13 13,-13zM32,23c-4.971,0 -9,4.029 -9,9c0,4.971 4.029,9 9,9c4.971,0 9,-4.029 9,-9c0,-4.971 -4.029,-9 -9,-9z" />
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </a>
+            <a href="https://www.tiktok.com/@mz.cars.lv" target="_blank">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M18 0C27.9411 0 36 8.05887 36 18C36 27.9411 27.9411 36 18 36C8.05887 36 0 27.9411 0 18C0 8.05887 8.05887 0 18 0ZM18.7476 7.29114L18.7454 22.0479C18.6843 23.7005 17.3569 25.0267 15.73 25.0268C15.2239 25.0268 14.7476 24.897 14.3286 24.6712C13.3671 24.1527 12.7083 23.1204 12.7083 21.9317C12.7083 20.2245 14.0638 18.8357 15.7291 18.8357C16.04 18.8357 16.3378 18.8885 16.62 18.9786V15.2195C16.3283 15.1794 16.0322 15.1537 15.7291 15.1537C12.0814 15.1537 9.11392 18.1942 9.11392 21.9317C9.11394 24.2244 10.2322 26.254 11.9375 27.4811C13.0115 28.2539 14.319 28.7089 15.7282 28.7089C19.3749 28.7088 22.3424 25.6692 22.3425 21.9317V14.4483C23.7517 15.4853 25.4787 16.0958 27.3418 16.0958L27.3409 12.4146C26.3375 12.4146 25.4021 12.1085 24.6183 11.5847C23.4921 10.8324 22.6796 9.62852 22.4261 8.22567C22.3721 7.92224 22.3416 7.61063 22.3416 7.29114H18.7476Z"
+                  fill="white" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="header__personal">
+            <a href="tel:+37127710202">+37127710202</a>
+            <a href="mailto:mzcars@mzcars.lv">mzcars@mzcars.lv</a>
+          </div>
+        </div>
+
+        <div class="burger">
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="product">
+      <div class="container">
+        <div class="product__inner">
+          <div class="product__left">
+            <div class="product__card-img-wrapper">
+              <div class="product__slider"></div>
+
+              <div class="product__card-img-info" data-car-info></div>
+            </div>
+
+            <div class="product__pagination" data-car-pagination></div>
+
+            <div class="product__links">
+              <a href="#" target="_blank" data-car-link-video>
+                <svg width="29" height="18" viewBox="0 0 29 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M27.2202 2.8543C26.4315 2.47403 25.5017 2.55391 24.797 3.06582C24.7515 3.09844 24.7083 3.13557 24.6687 3.17382L22.6188 5.16857C22.3727 2.28277 19.8877 3.76048e-07 16.8333 3.76048e-07H6.33333C3.11683 -0.00112469 0.5 2.52241 0.5 5.62423V12.3746C0.5 15.4765 3.11683 18 6.33333 18H16.8333C19.9005 18 22.396 15.697 22.6223 12.7943L24.671 14.7677C24.7107 14.8048 24.7515 14.8386 24.7958 14.8712C25.2065 15.1682 25.6918 15.319 26.1818 15.319C26.5353 15.319 26.8888 15.2413 27.2202 15.0816C28.01 14.7013 28.5 13.9351 28.5 13.0857V4.85243C28.5 4.00075 28.01 3.23458 27.2202 2.8543ZM16.8333 15.7499H6.33333C4.40367 15.7499 2.83333 14.2355 2.83333 12.3746V5.62423C2.83333 3.76336 4.40367 2.24902 6.33333 2.24902H16.8333C18.763 2.24902 20.3333 3.76336 20.3333 5.62423V12.3746C20.3333 14.2355 18.763 15.7499 16.8333 15.7499ZM22.6667 9.65535V8.31765L26.1667 4.91093L26.1958 13.0542L22.6667 9.65423V9.65535Z"
+                    fill="white" />
+                </svg>
+                video review
+              </a>
+              <a href="#" target="_blank" data-car-link-report>report Car Vertical</a>
+            </div>
+
+            <div class="product__calculator">
+              <h2 class="product__calculator-title">Car leasing calculator</h2>
+
+              <div class="product__calculator-row">
+                <div>
+                  <span class="product__calculator-row-text">Required amount</span>
+                  <span class="product__calculator-row-price"><span data-calc-amount>7990</span> €</span>
+                </div>
+              </div>
+
+              <div class="product__calculator-row">
+                <div>
+                  <span class="product__calculator-row-text">Car loan term</span>
+                  <span class="product__calculator-row-price"><span data-calc-term>84</span> мес.</span>
+                </div>
+                <div class="catalog__range-slider">
+                  <div class="catalog__range-progress catalog__range-progress--term"></div>
+                </div>
+                <div class="catalog__range-input catalog__range-input--product">
+                  <input type="range" id="range-term" min="12" max="84" step="12" value="84">
+                </div>
+              </div>
+
+              <p class="product__calculator-info">Monthly payment <span data-calc-finish>128.14</span>€</p>
+            </div>
+          </div>
+
+          <div class="product__right">
+            <h1 class="product__title" data-car-title></h1>
+            <div class="product__price">
+              <div class="product__price-left">
+                <span data-car-price></span>
+                <span class="product__price-left-info">
+                  i
+                  <span class="product__price-left-info-text">Full price</span>
+                </span>
+              </div>
+              <div class="product__price-right">
+                Leasing from
+                <span><span data-car-leasing></span>/Per month</span>
+              </div>
+            </div>
+            <ul class="product__info">
+              <li>
+                <h4>
+                  <img src="../img/calendar-2.svg" alt="calendar-2">
+                  Year
+                </h4>
+                <span data-car-year></span>
+              </li>
+              <li>
+                <h4>
+                  <img src="../img/speedometer.svg" alt="speedometer">
+                  Mileage
+                </h4>
+                <div><span data-car-mileage></span> km</div>
+              </li>
+              <li>
+                <h4>
+                  <img src="../img/car-2.svg" alt="car-2">
+                  Article
+                </h4>
+                <span data-car-article></span>
+              </li>
+              <li>
+                <h4>
+                  <img src="../img/transmission.svg" alt="transmission">
+                  Transmission 
+                </h4>
+                <span data-car-transmission></span>
+              </li>
+              <li>
+                <h4>
+                  <img src="../img/engine.svg" alt="engine">
+                  Engine
+                </h4>
+                <span data-car-engine></span>
+              </li>
+              <li>
+                <h4>
+                  <img src="../img/vin.svg" alt="vin">
+                  VIN number
+                </h4>
+                <span data-car-vin></span>
+              </li>
+            </ul>
+            <h2 class="product__descr-title">Description</h2>
+            <div class="product__descr" data-car-descr></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="form">
+      <div class="form__wrapper">
+        <div class="container">
+          <div class="form__inner">
+            <img src="../img/form-bg.jpg" alt="form-img">
+            <h3>Apply for car leasing</h3>
+            <h4>We will review it and contact you shortly</h4>
+            <form class="contact-form">
+              <div class="form__inputs form__inputs--product">
+                <input type="text" placeholder="Your Name" name="name" required>
+                <input type="tel" placeholder="Phone Number" name="phone" required>
+                <input type="email" placeholder="Email" name="email" required>
+                <input type="hidden" placeholder="Vehicle ID" name="carId" required>
+                <input type="text" placeholder="Loan amount" name="amount" required>
+                <input type="number" placeholder="Term in months (3-84)" min="3" max="84" name="term" required
+                  oninput="validity.valid || (value='');">
+                <input type="number" placeholder="Down payment (€)" name="firstPay" required>
+                <textarea type="text" placeholder="Comment" name="comment"></textarea>
+              </div>
+
+              <label class="form__checkbox">
+                <input type="checkbox" required>
+                <span class="form__checkbox-checkmark">
+                  <img src="../img/form-checkmark.svg" alt="form-checkmark">
+                </span>
+                I agree to the <a href="#" target="_blank">Privacy Policy</a> and <a href="#" target="_blank">Terms of
+                  Use Submit</a>
+              </label>
+
+              <div id="capcha1" class="g-recaptcha" data-sitekey="6LemRborAAAAAIgM93Jqy9gzfoAeQopJXRwQ8_9_"></div>
+              <div class="form-notification"></div>
+
+              <button type="submit" class="form__btn">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog catalog--product">
+      <div class="container">
+        <h3 class="catalog__title catalog__title--product">Other offers</h3>
+
+        <div class="catalog__inner">
+          <div class="catalog__right">
+            <div class="catalog__cards" id="related-cars"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contacts">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__content">
+          <a href="/eng.html">
+            <img class="footer__logo" src="../img/logo.png" alt="logo">
+          </a>
+
+          <div class="footer__info">
+            <nav class="footer__nav">
+              <a href="/eng.html#catalog">Car Catalog</a>
+              <a href="/eng.html#about">About Us</a>
+              <a href="/eng.html#lizing">Car Leasing</a>
+              <a href="/eng.html#contacts">​​​​​​​Contacts</a>
+              <a href="/eng.html#realization">Consignment Sale</a>
+              <div class="langs">
+                <button class="lang lang--white">
+                  <img src="../img/lang-white.svg" alt="lang-white">
+                  ENG
+                </button>
+                <div class="lang__list">
+                  <a class="lang__list-link" data-lang="ru" href="#">RU</a>
+                  <a class="lang__list-link" data-lang="lv" href="#">LV</a>
+                </div>
+              </div>
+            </nav>
+
+            <div class="footer__data">
+              <h4>SIA MZ MOTORS</h4>
+              <p><span>REG.NR.:</span> 40203053835<br>VAT.NR.: <span>LV40203053835</span> </p>
+            </div>
+
+            <ul class="footer__social">
+              <li>
+                <img src="../img/tel.svg" alt="tel">
+                <h5>Tel.</h5>
+                <a href="tel:+37127710202">+(371) 27 710 202</a>
+              </li>
+              <li>
+                <img src="../img/email.svg" alt="email">
+                <h5>Email:</h5>
+                <a href="mailto:mzcars@mzcars.lv">mzcars@mzcars.lv</a>
+              </li>
+              <li>
+                <img src="../img/web.svg" alt="web">
+                <h5>WEB:</h5>
+                <a href="http://www.mzcars.lv/">www.mzcars.lv</a>
+              </li>
+            </ul>
+
+            <a href="https://maps.app.goo.gl/S6kYodoL2Cgj2AKy9" target="_blank" class="footer__address">
+              <img src="../img/mark.svg" alt="mark">
+              Beberbeķu Iela 58 (LV-1029)<br>Riga, Latvia
+          </div>
+        </div>
+        </a>
+      </div>
+    </div>
+    </div>
+    <iframe class="footer__map"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1087.9701700543956!2d23.961442076843966!3d56.949823409822336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eedade2e211ccf%3A0x4f5ae9090d82d812!2zQmViZXJiZcS3dSBJZWxhIDU4LCBaZW1nYWxlcyBwcmlla8WhcGlsc8STdGEsIFLEq2dhLCBMVi0xMDI5LCDQm9Cw0YLQstC40Y8!5e0!3m2!1sru!2sru!4v1756731879958!5m2!1sru!2sru"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </footer>
+</body>
+
+</html>
