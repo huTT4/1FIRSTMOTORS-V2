@@ -9,11 +9,95 @@ const cars = {
       fuel: 'Другое',
       transmission: 'Автомат',
       availability: 'В наличии',
-      isNew: true,
+      isNew: false,
       discount: 0,
       isSold: false,
       // TODO: вернуть абсолютные пути
-      mainImg: 'img/cars/3.jpg',
+      mainImg: 'img/cars/2.jpg',
+      title: 'Kia Sorento',
+      article: 'MZ-003',
+      engine: '1.6 гибрид',
+      leasing: 482,
+
+      imgs: [
+        '/img/cars/Kia Sorento 2021 god/1.jpeg',
+        '/img/cars/Kia Sorento 2021 god/2.jpeg',
+        '/img/cars/Kia Sorento 2021 god/3.jpeg',
+        '/img/cars/Kia Sorento 2021 god/4.jpeg',
+        '/img/cars/Kia Sorento 2021 god/5.jpeg',
+        '/img/cars/Kia Sorento 2021 god/6.jpeg',
+        '/img/cars/Kia Sorento 2021 god/7.jpeg',
+        '/img/cars/Kia Sorento 2021 god/8 (1).jpeg',
+        '/img/cars/Kia Sorento 2021 god/8 (2).jpeg',
+        '/img/cars/Kia Sorento 2021 god/9.jpeg',
+        '/img/cars/Kia Sorento 2021 god/10.jpeg',
+        '/img/cars/Kia Sorento 2021 god/11 (1).jpeg',
+        '/img/cars/Kia Sorento 2021 god/11 (2).jpeg',
+        '/img/cars/Kia Sorento 2021 god/12.jpeg',
+        '/img/cars/Kia Sorento 2021 god/13 (1).jpeg',
+        '/img/cars/Kia Sorento 2021 god/13 (2).jpeg',
+        '/img/cars/Kia Sorento 2021 god/13 (3).jpeg',
+        '/img/cars/Kia Sorento 2021 god/13 (4).jpeg',
+        '/img/cars/Kia Sorento 2021 god/13 (5).jpeg',
+        '/img/cars/Kia Sorento 2021 god/13 (6).jpeg',
+        '/img/cars/Kia Sorento 2021 god/13 (7).jpeg',
+        '/img/cars/Kia Sorento 2021 god/13 (8).jpeg',
+        '/img/cars/Kia Sorento 2021 god/13 (9).jpeg',
+        '/img/cars/Kia Sorento 2021 god/15 (1).jpeg',
+        '/img/cars/Kia Sorento 2021 god/15 (2).jpeg',
+        '/img/cars/Kia Sorento 2021 god/15 (3).jpeg',
+        '/img/cars/Kia Sorento 2021 god/15 (4).jpeg',
+        '/img/cars/Kia Sorento 2021 god/15 (5).jpeg',
+        '/img/cars/Kia Sorento 2021 god/16.jpeg',
+        '/img/cars/Kia Sorento 2021 god/17.jpeg',
+        '/img/cars/Kia Sorento 2021 god/18.jpeg',
+      ],
+      vin: 'KNARM81HDM5057755',
+      linkVideo: '',
+      linkReport: '',
+      descr: `
+      <p>Гарантия 1 год, Kia Sorento Plug-In Hybrid 195 кВт / 265 л.с., только что привезён в Латвию. В несравнимо лучшем состоянии, чем местные автомобили (смотрите фото снизу). Одна из самых полных комплектаций.</p>
+      <p>7 мест<br>
+Полные LED / Matrix фары<br>
+Панель обшита кожей<br>
+Адаптивный круиз-контроль<br>
+Ассистент мёртвых зон<br>
+Ассистент удержания полосы<br>
+Дистанционный контроль<br>
+Функция подруливания<br>
+Ассистент дальнего света<br>
+Распознавание дорожных знаков<br>
+Выбор режимов движения<br>
+3-зонный климат-контроль<br>
+Электрорегулируемые сиденья<br>
+USB-разъёмы во всех трёх рядах<br>
+Подогрев сидений спереди и сзади<br>
+CarPlay / Android Auto<br>
+Атмосферная подсветка салона<br>
+Keyless Go (бесключевой доступ и запуск)<br>
+Беспроводная зарядка телефона<br>
+Шторки на окнах<br>
+Подстаканники во всех трёх рядах<br>
+Суперэкономичный и динамичный автомобиль с тихим ходом. В электрическом режиме может проехать более 50 км. <br>
+Низкий дорожный и корпоративный налог.<br>
+Идеальный автомобиль как для коротких, так и для дальних поездок.<br>
+Продаётся лицензированной автоторговой компанией. Ваш старый автомобиль может быть принят в счёт оплаты.<br>
+Если нужно, могу также перевести на английский или адаптировать текст для объявления.</p>
+      `
+    },
+    {
+      id: 3,
+      brand: 'KIA',
+      year: 2021,
+      price: 31990,
+      mileage: 136000,
+      fuel: 'Другое',
+      transmission: 'Автомат',
+      availability: 'В наличии',
+      isNew: true,
+      discount: 0,
+      isSold: false,
+      mainImg: 'img/cars/1.jpg',
       title: 'Kia Sorento',
       article: 'MZ-003',
       engine: '1.6 гибрид',
