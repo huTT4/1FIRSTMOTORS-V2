@@ -735,16 +735,20 @@ body:has(.burger.active) {
   align-items: center;
   gap: 11px;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 16px;
   color: #000;
   position: relative;
+}
+
+.catalog__item-title img {
+  width: 19px;
 }
 
 .catalog__item-title span {
   position: absolute;
   right: 0;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 16px;
   color: rgba(0, 0, 0, 0.4);
 }
 
@@ -2947,11 +2951,15 @@ body:has(.burger.active) {
 
   .catalog__item-title {
     gap: 8.25px;
-    font-size: 11.25px;
+    font-size: 12px;
+  }
+
+  .catalog__item-title img {
+    width: 14.25px;
   }
 
   .catalog__item-title span {
-    font-size: 11.25px;
+    font-size: 12px;
   }
 
   .catalog__select {
