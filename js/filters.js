@@ -1,5 +1,13 @@
 import cars from './cars.js'
 
+// ============================== Раскрытие фильтров ==============================
+const openBtn = document.querySelector('.catalog__open-filters')
+const filters = document.querySelector('.catalog__left')
+
+if (openBtn) {
+  openBtn.addEventListener('click', () => filters.classList.toggle('active'))
+}
+
 // ============================== Выбор бренда (только один) ==============================
 function updateSelectTopBrand() {
   const selectTop = document.querySelector('.catalog__brand-choise')
