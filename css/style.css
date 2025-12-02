@@ -641,7 +641,7 @@ body:has(.burger.active) {
   border-radius: 100px;
   padding: 13.5px 29.5px;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 15px;
   text-align: center;
   color: #fff;
 }
@@ -661,7 +661,7 @@ body:has(.burger.active) {
   font-weight: 500;
   padding: 13px 0 13px 15px;
   border-radius: 100px;
-  font-size: 15px;
+  font-size: 16px;
   outline: none;
   color: #000;
   width: 100%;
@@ -693,7 +693,7 @@ body:has(.burger.active) {
   align-items: center;
   gap: 5px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 17px;
   color: #2a2a2a;
   width: fit-content;
   padding: 10px;
@@ -2911,7 +2911,7 @@ body:has(.burger.active) {
 
   .catalog__found {
     padding: 10px 22.5px;
-    font-size: 10.5px;
+    font-size: 11.25px;
   }
 
   .catalog__search {
@@ -2920,7 +2920,7 @@ body:has(.burger.active) {
 
   .catalog__search input {
     padding: 9.75px 0 9.75px 11.25px;
-    font-size: 11.25px;
+    font-size: 12px;
   }
 
   .catalog__search button {
@@ -2938,7 +2938,7 @@ body:has(.burger.active) {
 
   .catalog__open-filters {
     gap: 3.75px;
-    font-size: 12px;
+    font-size: 12.75px;
     padding: 7.5px;
   }
 
