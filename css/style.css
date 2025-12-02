@@ -685,7 +685,7 @@ body:has(.burger.active) {
 .catalog__inner {
   display: flex;
   flex-direction: column;
-  gap: 37px;
+  gap: 20px;
 }
 
 .catalog__open-filters {
@@ -712,6 +712,7 @@ body:has(.burger.active) {
   background: #fafafa;
   padding: 30px 35px;
   display: none;
+  margin-bottom: 20px;
 }
 
 .catalog__left.active {
@@ -2933,7 +2934,7 @@ body:has(.burger.active) {
   }
 
   .catalog__inner {
-    gap: 27.75px;
+    gap: 15px;
   }
 
   .catalog__open-filters {
@@ -2945,6 +2946,7 @@ body:has(.burger.active) {
   .catalog__left {
     border-radius: 6px;
     padding: 22.5px 26.25px;
+    margin-bottom: 15px;
   }
 
   .catalog__filters {
