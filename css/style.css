@@ -377,7 +377,15 @@ body:has(.burger.active) {
   max-width: 1060px;
 }
 
+@font-face {
+  font-family: 'Sequel';
+  src: url('../fonts/sequel-sans-black-head.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
 .hero__title {
+  font-family: 'Sequel', sans-serif;
   font-weight: 900;
   font-size: 55px;
   line-height: 126%;
@@ -512,15 +520,11 @@ body:has(.burger.active) {
   }
 
   .hero__img {
-    object-position: top left;
+    object-position: top right;
   }
 }
 
 @media (max-width: 650px) {
-  .hero__img {
-    object-position: top center;
-  }
-
   .hero__btns {
     flex-direction: column-reverse;
     gap: 15px;
@@ -693,11 +697,11 @@ body:has(.burger.active) {
   color: #2a2a2a;
   width: fit-content;
   padding: 10px;
+  box-shadow: 0px 0px 5px rgb(0, 0, 0, .1);
   transition: .15s;
 }
 
 .catalog__open-filters:hover {
-  box-shadow: 0px 0px 5px rgb(0, 0, 0, .1);
   transform: translateY(-2px);
 }
 
@@ -1244,6 +1248,10 @@ body:has(.burger.active) {
 
   .catalog__card-info-wrapper {
     padding: 0 15px 15px;
+  }
+
+  .catalog__item-title {
+    justify-content: center;
   }
 }
 
