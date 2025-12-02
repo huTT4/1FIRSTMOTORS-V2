@@ -379,14 +379,14 @@ body:has(.burger.active) {
 
 @font-face {
   font-family: 'Sequel';
-  src: url('../fonts/sequel-sans-black-head.ttf') format('truetype');
-  font-weight: 900;
+  src: url('../fonts/sequel-sans-medium-head.ttf') format('truetype');
+  font-weight: 500;
   font-style: normal;
 }
 
 .hero__title {
   font-family: 'Sequel', sans-serif;
-  font-weight: 900;
+  font-weight: 500;
   font-size: 55px;
   line-height: 126%;
   text-transform: uppercase;
@@ -402,7 +402,7 @@ body:has(.burger.active) {
 }
 
 .hero__subtitle {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 20px;
   color: #fff;
   margin-bottom: 35px;
@@ -739,7 +739,7 @@ body:has(.burger.active) {
   align-items: center;
   gap: 11px;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 17px;
   color: #000;
   position: relative;
 }
@@ -768,7 +768,7 @@ body:has(.burger.active) {
   padding: 11.5px 17px;
   cursor: pointer;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 16px;
   color: rgba(0, 0, 0, 0.4);
   display: flex;
   justify-content: space-between;
@@ -792,7 +792,7 @@ body:has(.burger.active) {
 
 .catalog__select-list label {
   font-weight: 400;
-  font-size: 15px;
+  font-size: 16px;
   color: #000000;
   cursor: pointer;
   border: 1px solid rgba(0, 0, 0, 0.05);
@@ -812,7 +812,7 @@ body:has(.burger.active) {
 
 .catalog__select-list label:has(input[type="radio"]:checked),
 .catalog__select-list label:has(input[type="checkbox"]:checked) {
-  border-color: #ffbf4a;
+  border-color: #000;
 }
 
 .catalog__select.active .catalog__select-top img {
@@ -841,14 +841,14 @@ body:has(.burger.active) {
   background: #fff;
   padding: 14px;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 16px;
   color: #000;
   outline: none;
   transition: .15s;
 }
 
 .catalog__range input:focus {
-  border-color: #ffb936;
+  border-color: #000;
 }
 
 .catalog__choice {
@@ -860,7 +860,7 @@ body:has(.burger.active) {
 
 .catalog__choice label {
   font-weight: 600;
-  font-size: 15px;
+  font-size: 16px;
   color: rgba(0, 0, 0, 0.4);
   cursor: pointer;
   border: 1px solid rgba(0, 0, 0, 0.05);
@@ -883,7 +883,7 @@ body:has(.burger.active) {
 .catalog__choice label:has(input[type="radio"]:checked),
 .catalog__choice label:has(input[type="checkbox"]:checked) {
   color: #000;
-  border: 1px solid #ffbf49;
+  border: 1px solid #000;
 }
 
 .catalog__filters-btns {
@@ -896,7 +896,6 @@ body:has(.burger.active) {
   border-radius: 6px;
   padding: 17px;
   width: 100%;
-  background: #ffb835;
   font-weight: 700;
   font-size: 15px;
   text-transform: uppercase;
@@ -904,13 +903,13 @@ body:has(.burger.active) {
   color: #000;
   cursor: pointer;
   transition: .15s;
-}
 
-.catalog__filters-btn--clear {
   border: 1px solid rgba(0, 0, 0, 0.15);
   background: #fff;
   color: rgba(0, 0, 0, .7);
 }
+
+.catalog__filters-btn--clear {}
 
 .catalog__filters-btn--clear:disabled {
   border: 1px solid rgba(0, 0, 0, 0.05);
@@ -920,12 +919,13 @@ body:has(.burger.active) {
 }
 
 .catalog__filters-btn:hover {
-  background: #ffcb70;
+  color: #fff;
+  background: #000;
 }
 
 .catalog__filters-btn:active {
   background: #ffffff;
-  color: #ffbb43;
+  color: #000;
 }
 
 .catalog__filters-btn.inactive {
@@ -974,7 +974,7 @@ body:has(.burger.active) {
   left: -1px;
   right: -1px;
   bottom: -1px;
-  background: linear-gradient(172deg, #ffa600 0%, #ffb936 100%);
+  background: linear-gradient(172deg, #ffffff 0%, #000000 100%);
   border-radius: 8px;
   z-index: -1;
   opacity: 0;
@@ -1028,7 +1028,7 @@ body:has(.burger.active) {
   content: "";
   position: absolute;
   inset: 0;
-  background: #ffb733;
+  background: #000;
   border-radius: 6px;
   transform: skewX(-12deg);
   z-index: -1;
@@ -1047,7 +1047,7 @@ body:has(.burger.active) {
 }
 
 .catalog__card-img-info-availability::before {
-  background: #ffa600 !important;
+  background: #000 !important;
 }
 
 .catalog__card-info-wrapper {
@@ -1077,7 +1077,7 @@ body:has(.burger.active) {
 .catalog__card-title h5 {
   font-weight: 800;
   font-size: 20px;
-  color: #ffb835;
+  color: #000;
 }
 
 .catalog__card-info {
@@ -1116,7 +1116,7 @@ body:has(.burger.active) {
 }
 
 .catalog__card-price h6 span {
-  background: linear-gradient(180deg, #ffb835 0%, #ffbf4a 100%);
+  background: linear-gradient(180deg, #000000 0%, #000000 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -2959,7 +2959,7 @@ body:has(.burger.active) {
 
   .catalog__item-title {
     gap: 8.25px;
-    font-size: 12px;
+    font-size: 12.75px;
   }
 
   .catalog__item-title img {
@@ -2967,7 +2967,7 @@ body:has(.burger.active) {
   }
 
   .catalog__item-title span {
-    font-size: 12px;
+    font-size: 12.75px;
   }
 
   .catalog__select {
@@ -2977,7 +2977,7 @@ body:has(.burger.active) {
   .catalog__select-top {
     border-radius: 4.5px;
     padding: 8.5px 12.75px;
-    font-size: 11.25px;
+    font-size: 12px;
     gap: 7.5px;
   }
 
@@ -2988,7 +2988,7 @@ body:has(.burger.active) {
   }
 
   .catalog__select-list label {
-    font-size: 11.25px;
+    font-size: 12px;
     border-radius: 4.5px;
     padding: 7.5px;
   }
@@ -3002,7 +3002,7 @@ body:has(.burger.active) {
     border-radius: 4.5px;
     max-width: 87.75px;
     padding: 10.5px;
-    font-size: 11.25px;
+    font-size: 12px;
   }
 
   .catalog__choice {
@@ -3010,7 +3010,7 @@ body:has(.burger.active) {
   }
 
   .catalog__choice label {
-    font-size: 11.25px;
+    font-size: 12px;
     border-radius: 4.5px;
     padding: 10.5px 8.25px;
     width: calc(50% - 4.5px);
